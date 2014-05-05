@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#home'
   get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
 
   # Generally setting it up so you can go to a page on the site
   # GET 'directory/file' e.g. GET 'views/pages/about'
