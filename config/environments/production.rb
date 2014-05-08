@@ -82,5 +82,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Define default url options for devise, required for Heroku
+  # Need to run heroku run rake db:migrate or there may be unexplained errors
   config.action_mailer.default_url_options = { host: 'bacondrake-first.herokuapp.com' }
 end
