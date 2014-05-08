@@ -15,6 +15,10 @@
 
   <!-- getbootstrap.com for div class, yield is for stuff in /pages -->
   <div class="container">
+      <!-- For flash messages (you are signed in, there is an error, etc.) -->
+      <% flash.each do |name, msg| %>
+        <%= content_tag(:div, msg, class: "alert alert-info") %>
+      <% end %>
     <%= yield %>
   </div>
 

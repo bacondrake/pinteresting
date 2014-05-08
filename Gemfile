@@ -9,7 +9,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass' # For aesthetics
+gem 'devise', '~> 3.1.0.rc2' # For login and signup/authentication
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -17,7 +18,7 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3' # Test database
 end
 
 group :production do
