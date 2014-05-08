@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #creates /pins and /pins/new, /pins/1/, pins/1/edit, etc.
+  resources :pins
+
   devise_for :users
   root 'pages#home'
   get 'about' => 'pages#about'
