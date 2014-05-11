@@ -8,7 +8,10 @@
       <thead>
         <tr>
           <th>Description</th>
-          <th colspan="3"></th>
+          <th>User email</th>
+          <th></th>
+          <th></th>
+          <th></th>
         </tr>
       </thead>
       
@@ -16,9 +19,12 @@
           <% @pins.each do |pin| %>
             <tr id="table-padding">
               <td><%= pin.description %></td>
+              <td><%= pin.user.email if pin.user %></td> <!-- should delete those who return false in the if statement -->
               <td><%= link_to 'Show', pin %></td>
-              <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
-              <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <% if pin.user == current_user %> <!-- only allows you to do the below actions if the pin is associated with you -->
+                <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
+                <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <% end %>
             </tr>
           <% end %>
         </tbody>
@@ -26,7 +32,8 @@
     </table>
 
     <br />
-
-    <%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
+    <% if user_signed_in? %>
+      <%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
+    <% end %>
   </div>
 </div>
