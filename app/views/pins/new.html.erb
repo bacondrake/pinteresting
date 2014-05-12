@@ -3,6 +3,8 @@
     <h1>New pin</h1>
   </div> <!-- close panel-heading -->
 
+  <%= image_tag @pin.image.url(:medium) %>
+
   <div class="panel-body">
     <%= render 'form' %>
 

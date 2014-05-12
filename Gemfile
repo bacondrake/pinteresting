@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass' # For aesthetics
 gem 'devise', '~> 3.1.0.rc2' # For login and signup/authentication
+gem 'paperclip', github: 'thoughtbot/paperclip' # Enables users to upload images
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
