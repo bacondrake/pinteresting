@@ -29,3 +29,12 @@
     </div>
   <% end %>
 </div>
+
+<!-- will_paginate gem for rails
+<div style="text-align:center">
+  <%= will_paginate @pins %>
+</div> -->
+
+<!-- will_paginate-bootstrap gem for rails (for Sinatra, replace BootstrapPagination::Rails with ::Sinatra -->
+<div class="center">
+  <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>
