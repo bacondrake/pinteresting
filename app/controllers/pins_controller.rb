@@ -5,7 +5,7 @@ class PinsController < ApplicationController
   #before_action and before_filter are the same thing
 
   def index
-    @pins = Pin.all
+    @pins = Pin.all.order("created_at DESC")
   end
 
   def show
