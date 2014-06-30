@@ -1,10 +1,5 @@
 <%= render 'pages/home' unless user_signed_in? %>
 <div class="panel-body">
-  <div class="alert alert-danger">
-    <em>
-      <p>Images will not appear in production because the Heroku production environment does not automatically store images. They can be seen in development, but are only being used temporarily.</p>
-    </em>
-  </div>
 
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
