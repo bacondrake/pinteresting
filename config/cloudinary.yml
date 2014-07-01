@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dtjhmvqma
+  api_key: '681198132872364'
+  api_secret: "-3_tyueYbCYQQ8YIfYHoQmMp_z0"
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dtjhmvqma
+  api_key: '681198132872364'
+  api_secret: "-3_tyueYbCYQQ8YIfYHoQmMp_z0"
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dtjhmvqma
+  api_key: '681198132872364'
+  api_secret: "-3_tyueYbCYQQ8YIfYHoQmMp_z0"
+  enhance_image_tag: true
+  static_image_support: false
