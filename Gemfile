@@ -13,9 +13,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass' # For aesthetics
 gem 'devise', '~> 3.1.0.rc2' # For login and signup/authentication
 gem 'paperclip', github: 'thoughtbot/paperclip' # Enables users to upload images
-# Carrierwave and Cloudinary for image storage on Heroku
-gem 'carrierwave'
-gem 'cloudinary'
 gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
